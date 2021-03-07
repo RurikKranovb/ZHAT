@@ -1,0 +1,53 @@
+[2019-09-20 15:43:26,008][INFO ][node                     ] [node-1] version[2.4.6], pid[3032], build[5376dca/2017-07-18T12:17:44Z]
+[2019-09-20 15:43:26,046][INFO ][node                     ] [node-1] initializing ...
+[2019-09-20 15:43:28,562][INFO ][plugins                  ] [node-1] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2019-09-20 15:43:28,657][INFO ][env                      ] [node-1] using [1] data paths, mounts [[(E:)]], net usable_space [269.3gb], net total_space [631.2gb], spins? [unknown], types [NTFS]
+[2019-09-20 15:43:28,664][INFO ][env                      ] [node-1] heap size [990.7mb], compressed ordinary object pointers [true]
+[2019-09-20 15:43:28,739][WARN ][threadpool               ] [node-1] requested thread pool size [8] for [bulk] is too large; setting to maximum [4] instead
+[2019-09-20 15:43:32,440][INFO ][node                     ] [node-1] initialized
+[2019-09-20 15:43:32,440][INFO ][node                     ] [node-1] starting ...
+[2019-09-20 15:43:32,545][INFO ][transport                ] [node-1] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}
+[2019-09-20 15:43:32,551][INFO ][discovery                ] [node-1] origin/mchSbLLUQrmBhoYLSA1sHA
+[2019-09-20 15:43:37,103][INFO ][cluster.service          ] [node-1] new_master {node-1}{mchSbLLUQrmBhoYLSA1sHA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2019-09-20 15:43:37,154][INFO ][http                     ] [node-1] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}
+[2019-09-20 15:43:37,154][INFO ][node                     ] [node-1] started
+[2019-09-20 15:43:37,898][INFO ][gateway                  ] [node-1] recovered [1] indices into cluster_state
+[2019-09-20 15:43:40,353][INFO ][cluster.routing.allocation] [node-1] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[data.original][0], [data.original][0]] ...]).
+[2019-09-20 15:45:01,011][WARN ][http.netty               ] [node-1] Caught exception while handling client http traffic, closing connection [id: 0x2dd9720e, /127.0.0.1:55518 => /127.0.0.1:9200]
+java.io.IOException: РЈРґР°Р»РµРЅРЅС‹Р№ С…РѕСЃС‚ РїСЂРёРЅСѓРґРёС‚РµР»СЊРЅРѕ СЂР°Р·РѕСЂРІР°Р» СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРµ РїРѕРґРєР»СЋС‡РµРЅРёРµ
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+[2019-09-20 15:47:40,460][WARN ][http.netty               ] [node-1] Caught exception while handling client http traffic, closing connection [id: 0x77da7913, /127.0.0.1:55874 => /127.0.0.1:9200]
+java.io.IOException: РЈРґР°Р»РµРЅРЅС‹Р№ С…РѕСЃС‚ РїСЂРёРЅСѓРґРёС‚РµР»СЊРЅРѕ СЂР°Р·РѕСЂРІР°Р» СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРµ РїРѕРґРєР»СЋС‡РµРЅРёРµ
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+[2019-09-20 16:14:47,716][INFO ][node                     ] [node-1] stopping ...
+[2019-09-20 16:14:47,757][INFO ][node                     ] [node-1] stopped
+[2019-09-20 16:14:47,758][INFO ][node                     ] [node-1] closing ...
+[2019-09-20 16:14:47,763][INFO ][node                     ] [node-1] closed
